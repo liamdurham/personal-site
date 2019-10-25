@@ -1,0 +1,53 @@
+#topBanner {
+  background-color: #6B88FE;
+}
+#bannerText {
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: -3px;
+  font-size: 42px;
+  margin-left: 5%;
+}
+a
+{
+  text-decoration: none;  
+}
+/*** Nav *************************************************************/
+
+.button {
+  text-decoration: none;
+  background-color: none;
+  color: #1976d2;
+  margin-left: 5%;
+}
+.button:hover
+{ 
+	border-image: linear-gradient(to right, #9ABCF5 0%, #9ABCF5 29%, transparent 30%, transparent 70%, #9ABCF5 71%, #9ABCF5 100%); 
+  border-image-slice: 1;
+}
+.fancy-button i.material-icons {
+  color: #9ABCF5;
+  padding: 5px;
+  font-size: 48px;
+  line-height: 100px;
+  vertical-align: middle;
+}
+.fancy-button i.material-icons:hover {
+  color: white;
+}
+.bracketed{	
+  padding: 20px 5px;
+	border: 1px solid;
+	border-image: linear-gradient(to right, white 0%, white 29%, transparent 30%, transparent 70%, white 71%, white 100%);
+	border-image-slice: 1;
+}
+@media only screen and (max-width: 800px)
+{
+  .button{
+    margin: 0 auto; 
+  }
+  #bannerText{
+   font-size: 32px; 
+  }
+
+}

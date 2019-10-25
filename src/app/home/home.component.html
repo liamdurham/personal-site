@@ -1,0 +1,54 @@
+<div class="homeBG h-100 d-flex">
+
+  <div class="col-6 d-flex flex-column">
+  <div class="welcomeHolder align-content-between align-self-center">
+  <div class="welcomeText">Hi!</div>
+  <div class="welcomeText">I'm Liam,</div>
+  <div class="welcomeText">Check out my stuff - </div>
+    </div>  
+  </div>
+
+  <div class="stuffHolder align-content-between col-6 d-flex flex-column h-60">
+    <a routerLink="/detail" state="1">
+    <div class="stuffSelector d-flex align-items-center">
+    <div class="stuffSelectorText col-8">
+    Coding Stuff
+    </div>
+    <div class="numberOfStuffs col-4 mr-auto">
+    <div class="itemNumberText">  
+    {{extras[1]}}
+    <br>
+    <p>Items</p> 
+    </div> 
+    </div>
+    </div>
+    </a>
+    <a routerLink="/detail" state="2">
+    <div class="stuffSelector d-flex align-items-center">
+    <div class="stuffSelectorText col-8">
+    Graphics Stuff
+    </div>
+    <div class="numberOfStuffs col-4 mr-auto">
+    <div class="itemNumberText">  
+    {{extras[2]}}
+    <br>
+    <p>Items</p>
+    </div> 
+    </div>
+    </div>
+    </a>
+    <a routerLink="/detail" state="3">
+    <div class="stuffSelector d-flex align-items-center">
+    <div class="stuffSelectorText col-8">
+    UX/UI Stuff
+    </div>
+    <div class="numberOfStuffs col-4 mr-auto">
+    <div class="itemNumberText">  
+    {{extras[3]}}
+    <br>
+    <p>Items</p>
+    </div>
+    </div>
+    </div>
+    </a>
+  </div>

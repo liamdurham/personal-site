@@ -1,0 +1,95 @@
+<div class="homeBG h-100 d-flex">
+  <div class="stuffHolder justify-content-between col-4 d-flex flex-column h-60">
+    <a routerLink="/detail" (click)='setList(1)'>
+    <div class="stuffSelector align-self-start d-flex align-items-center">
+    <div class="stuffSelectorText col-8">
+    Coding Stuff
+    </div>
+    <div class="numberOfStuffs col-4 mr-auto">
+    <div class="itemNumberText">  
+    {{extras[1]}}
+    <br>
+    <p>Items</p> 
+    </div> 
+    </div>
+    </div>
+    </a>
+    <a routerLink="/detail" (click)='setList(2)'>
+    <div class="stuffSelector align-self-middle d-flex align-items-center">
+    <div class="stuffSelectorText col-8">
+    Graphics Stuff
+    </div>
+    <div class="numberOfStuffs col-4 mr-auto">
+    <div class="itemNumberText">  
+    {{extras[2]}}
+    <br>
+    <p>Items</p>
+    </div> 
+    </div>
+    </div>
+    </a>
+    <a routerLink="/detail" (click)='setList(3);'>
+    <div class="stuffSelector d-flex align-items-center">
+    <div class="stuffSelectorText col-8">
+    UX/UI Stuff
+    </div>
+    <div class="numberOfStuffs col-4 mr-auto">
+    <div class="itemNumberText">  
+    {{extras[3]}}
+    <br>
+    <p>Items</p>
+    </div>
+    </div>
+    </div>
+    </a>
+  </div>
+
+  <div class="d-flex flex-column detailHolder">
+    <div class="mobileMenu justify-content-around d-flex">
+     <a class="stuffSelectorM col-3" routerLink="/detail" (click)='setList(1)'>
+    <div class="stuffSelectorTextM">
+    Coding <div>{{extras[1]}}</div>
+    </div>
+    </a>
+    <a class="stuffSelectorM col-3" routerLink="/detail" (click)='setList(2)'>
+    <div class="stuffSelectorTextM">
+    Graphics <div>{{extras[2]}}</div>
+    </div>
+    </a>
+    <a class="stuffSelectorM col-3" routerLink="/detail" (click)='setList(3)'>
+    <div class="stuffSelectorTextM">
+    UX/UI <div>{{extras[3]}}</div>
+    </div>
+    </a>
+    </div>
+    <div class="detailHeader d-flex">
+    <div class="stuffSelectorTextD col-9">
+      {{extras['catName']}}
+    </div> 
+    <div class="numberOfStuffsD ml-auto">
+     <div class="itemNumberText"> 
+      {{extras['catNameNum']}}<p>Items</p>
+      </div>
+    </div>
+  </div> 
+  <div id="output" *ngFor="let item of items">   
+  <div class="detailObj d-flex" (click)="showProject(item)">   
+  <div class="detailDate col-4">
+    {{item.date}}
+    </div> 
+  <div class="detailName col-7">
+    {{item.name}}
+    </div>
+  </div>         
+  </div>
+  </div>
+
+</div>
+<app-pop-up class="popbox" (click)="closeProject()" [isOpen]="popUpOpen">
+      <div class = "d-flex flex-column align-self-start align-items-center justify-content-around popbox-container h-100 w-100">
+      <div class = "popboxheader">{{details.name}}</div>
+      <div class = "popboxdate">{{details.date}}</div>
+      <div class = "popboxdesc">{{details.desc}}</div>
+    <a href={{details.url}} target="_blank" class="button fancy-button bracketed"><i class="material-icons">call_made</i></a>
+    </div>      
+</app-pop-up>

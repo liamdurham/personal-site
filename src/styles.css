@@ -1,0 +1,17 @@
+/* Add application styles & imports to this file! */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+
+}
+a {
+  text-decoration: none;
+}
+html, body, app-root{
+  overflow-x: hidden;
+  background-color: #9ABCF5;
+}

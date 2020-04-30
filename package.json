@@ -18,7 +18,7 @@
     "@types/node": "8.9.5",
     "bootstrap": "4.3.1",
     "core-js": "2.6.9",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "material": "0.3.13",
     "popper.js": "1.15.0",
     "rxjs": "6.5.2",
